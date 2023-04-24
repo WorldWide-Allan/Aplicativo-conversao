@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Convertendo.MainPage">
+
+    <StackLayout Style="{StaticResource stk_background}">
+        <Frame BackgroundColor="Purple" Padding="24">
+            <Label Style="{StaticResource lbl_titulo}" Text="App de conversão"/>
+        </Frame>
+        <StackLayout Orientation="Horizontal">
+            <Frame Style="{StaticResource fr_metro}">
+                <Label Style="{StaticResource lbl_met}" Text="Metro: "/>
+            </Frame>
+            <Frame Margin="0,-0,0,-0" Padding="50,-10,50,0">
+                <Entry x:Name="ent_metro" Style="{StaticResource ent_metro}" Placeholder="Digite aqui"/>
+            </Frame>
+        </StackLayout>
+        <Label Style="{StaticResource lbl_resultados}" Text="Resultados"/>
+        <Frame>
+            <Label x:Name="lbl_km" Style="{StaticResource lbl_resultado}" Text="Quilomêtros: "/>
+        </Frame>
+        <Frame>
+            <Label x:Name="lbl_jardas" Style="{StaticResource lbl_resultado}" Text="Jardas: "/>
+        </Frame>
+        <Frame Margin="0,0,0,140">
+            <Label x:Name="lbl_poleg" Style="{StaticResource lbl_resultado}" Text="Polegadas: "/>
+        </Frame>
+        <Button x:Name="btt_calcular" Clicked="btt_calcular_Clicked" Style="{StaticResource btt_conversao}" Text="Converter"/>
+        <Button x:Name="btt_limpar" Clicked="btt_limpar_Clicked" Style="{StaticResource btt_conversao}" Text="Limpar"/>
+    </StackLayout>
+
+</ContentPage>
